@@ -1,9 +1,17 @@
 ---
 name: dispatching-parallel-agents
-description: Use when facing 2+ independent tasks that can be worked on without shared state or sequential dependencies
+description: 面对 2 个以上相互独立、无需共享状态或顺序依赖的任务时使用
 ---
 
-# Dispatching Parallel Agents
+# 派发并行代理
+
+## 中文速读
+
+当有 2 个以上互不依赖的任务可以并行推进时，使用此技能。每个子代理只拿到完成自己任务所需的上下文，不继承当前会话历史。
+
+**适合：** 独立调查、互不重叠的代码修改、并行验证。
+
+**不适合：** 下一步被某个结果阻塞、任务共享状态密集、写入范围重叠且容易冲突。
 
 ## Overview
 

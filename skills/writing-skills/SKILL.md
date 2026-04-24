@@ -1,9 +1,17 @@
 ---
 name: writing-skills
-description: Use when creating new skills, editing existing skills, or verifying skills work before deployment
+description: 创建新技能、编辑现有技能，或在部署前验证技能是否有效时使用
 ---
 
-# Writing Skills
+# 编写技能
+
+## 中文速读
+
+技能不是普通文档，而是会塑造代理行为的流程代码。创建或修改技能时，用测试驱动方式：先观察没有技能时代理如何失败，再编写技能堵住真实失败路径，然后验证代理是否按要求执行。
+
+**核心原则：** 没有看见代理在无技能情况下失败，就不知道技能是否教对了东西。
+
+**不要：** 为一次性项目写技能、写项目专属流程、只凭理论改行为塑造内容，或在没有压力测试的情况下重写核心技能语气。
 
 ## Overview
 

@@ -1,9 +1,17 @@
 ---
 name: systematic-debugging
-description: Use when encountering any bug, test failure, or unexpected behavior, before proposing fixes
+description: 遇到任何 bug、测试失败或意外行为时，在提出修复前使用
 ---
 
-# Systematic Debugging
+# 系统化调试
+
+## 中文速读
+
+遇到 bug、测试失败或意外行为时，先调查再修复。不要猜原因，不要直接改看起来可疑的代码。
+
+**核心流程：** 观察症状 → 复现问题 → 找到最近的正确状态 → 沿数据/调用链向后追踪 → 找到根因 → 最小修复 → 验证原始症状和回归测试。
+
+**禁止：** 跳过复现、凭感觉修、修多个可能原因、未验证就声称已修复。
 
 ## Overview
 

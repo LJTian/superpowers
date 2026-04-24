@@ -1,9 +1,17 @@
 ---
 name: test-driven-development
-description: Use when implementing any feature or bugfix, before writing implementation code
+description: 实现任何功能或 bug 修复时，在编写实现代码前使用
 ---
 
-# Test-Driven Development (TDD)
+# 测试驱动开发（TDD）
+
+## 中文速读
+
+实现任何功能或 bug 修复前，先写失败测试，再写最小实现让测试通过，最后重构。
+
+**核心原则：** 没亲眼看到测试先失败，就不知道测试是否真的覆盖了目标行为。
+
+**铁律：** 没有先失败的测试，就不要写生产代码。如果已经写了实现，删除它，从测试重新开始。
 
 ## Overview
 

@@ -1,9 +1,17 @@
 ---
 name: receiving-code-review
-description: Use when receiving code review feedback, before implementing suggestions, especially if feedback seems unclear or technically questionable - requires technical rigor and verification, not performative agreement or blind implementation
+description: 收到代码审阅反馈、准备实现建议前使用，尤其是反馈不清楚或技术上可疑时；要求技术严谨和验证，而不是表演式同意或盲目实现
 ---
 
-# Code Review Reception
+# 接收代码审阅
+
+## 中文速读
+
+收到审阅反馈后，先理解和验证，再实现。不要表演式同意，不要盲目照做；如果反馈不清楚，先问清楚。
+
+**核心原则：** 先验证再实现，先提问再假设。技术正确性优先于社交舒适感。
+
+**禁止：** “你说得完全对”、未验证就“我现在去改”、对外部审阅意见不加判断地执行。
 
 ## Overview
 

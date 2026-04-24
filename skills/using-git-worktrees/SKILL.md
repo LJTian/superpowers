@@ -1,9 +1,17 @@
 ---
 name: using-git-worktrees
-description: Use when starting feature work that needs isolation from current workspace or before executing implementation plans - creates isolated git worktrees with smart directory selection and safety verification
+description: 开始需要隔离当前工作区的功能工作，或执行实现计划前使用；创建隔离的 git worktree，并进行目录选择和安全验证
 ---
 
-# Using Git Worktrees
+# 使用 Git Worktree
+
+## 中文速读
+
+开始需要隔离的功能工作或执行实现计划前，创建或确认一个隔离 worktree，避免污染当前工作区。
+
+**优先级：** 复用已有合适目录 → 遵循项目配置 → 必要时询问用户。
+
+**安全规则：** 不要在 main/master 上直接实现计划；创建 worktree 前检查当前状态和目录安全；清理时确认不会删除用户仍需要的工作。
 
 ## Overview
 

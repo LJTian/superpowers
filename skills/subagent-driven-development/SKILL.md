@@ -1,9 +1,17 @@
 ---
 name: subagent-driven-development
-description: Use when executing implementation plans with independent tasks in the current session
+description: 在当前会话中执行包含独立任务的实现计划时使用
 ---
 
-# Subagent-Driven Development
+# 子代理驱动开发
+
+## 中文速读
+
+执行实现计划时，为每个独立任务派发全新子代理。每个任务完成后先做规格符合性审阅，再做代码质量审阅，审阅通过后才进入下一个任务。
+
+**核心原则：** 新子代理 + 精确上下文 + 两阶段审阅 = 更高质量、更少上下文污染。
+
+**不要：** 让子代理继承当前会话历史、跳过审阅、在规格审阅未通过前做代码质量审阅，或接受“差不多符合”的实现。
 
 Execute plan by dispatching fresh subagent per task, with two-stage review after each: spec compliance review first, then code quality review.
 
